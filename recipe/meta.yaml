@@ -1,5 +1,5 @@
 {% set name = "tagmaps" %}
-{% set version = "0.19.1" %}
+{% set version = "0.20.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 40a88f74513bd656965cb07b8e4c02ab4a181fa50cf3811e4c1aec0e21162f52
+  sha256: 77723a7b2a156c30c5c98873e542c691fdc2a4dfe67939000626d906cdd1d53d
 
 build:
   noarch: python
-  number: 1
+  number: 0
   entry_points:
     - tagmaps = tagmaps.__main__:main
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
