@@ -1,5 +1,5 @@
 {% set name = "tagmaps" %}
-{% set version = "0.20.1" %}
+{% set version = "0.20.2" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 429ebdc7fbdf651f426ff9432892a31194965ea325a22cbaa922beaa80e91425
+  sha256: d690d3c2a950447d3821630f3e8cff4bb2be260fb600f0a7d9746b0ed27754a3
 
 build:
   noarch: python
@@ -18,10 +18,10 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.7
     - pip
   run:
-    - python >=3.5
+    - python >=3.7
     - shapely
     - fiona
     - pandas >=0.24.2
@@ -32,7 +32,6 @@ requirements:
     - cython
     - hdbscan >=0.8.20
     - gdal
-    - attrs
     - seaborn
     - descartes
     - regex
