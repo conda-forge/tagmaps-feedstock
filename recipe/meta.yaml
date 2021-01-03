@@ -1,5 +1,5 @@
 {% set name = "tagmaps" %}
-{% set version = "0.20.3" %}
+{% set version = "0.20.5" %}
 
 package:
   name: "{{ name|lower }}"
@@ -25,7 +25,7 @@ requirements:
     - shapely
     - fiona
     - pandas >=0.24.2
-    - pyproj >=1.9.6
+    - pyproj >=2.0.0
     - numpy
     - matplotlib-base
     - emoji >=0.5.1
@@ -36,8 +36,6 @@ requirements:
     - descartes
     - regex
     - scipy
-    - six
-    - joblib
 
 test:
   imports:
