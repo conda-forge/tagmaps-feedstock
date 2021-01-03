@@ -5,7 +5,7 @@ Home: https://github.com/Sieboldianus/TagMaps
 
 Package license: GPL-3.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tagmaps-feedstock/blob/master/LICENSE.txt)
 
 Summary: Tag Clustering for Tag Maps
 
