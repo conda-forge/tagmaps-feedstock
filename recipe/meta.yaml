@@ -1,5 +1,5 @@
 {% set name = "tagmaps" %}
-{% set version = "0.21.0" %}
+{% set version = "0.21.1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f7b2d7f04cff5742ee68813a01aa8a0f7045b571f92d56df20b52669ef2c5f35
+  sha256: 397fa8f136cc19891e3a1a011884eee2578ed4ba5fa30f38c4751df6c69f9eeb
 
 build:
   noarch: python
@@ -27,8 +27,8 @@ requirements:
     - pandas >=0.24.2
     - pyproj >=2.0.0
     - numpy
-    - matplotlib-base
-    - emoji >=1.0.1
+    - matplotlib-base >=3.0.0
+    - emoji >=2.0.0
     - cython
     - hdbscan >=0.8.20
     - gdal
