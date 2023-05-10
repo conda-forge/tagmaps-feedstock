@@ -1,5 +1,5 @@
 {% set name = "tagmaps" %}
-{% set version = "0.21.1" %}
+{% set version = "0.21.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 397fa8f136cc19891e3a1a011884eee2578ed4ba5fa30f38c4751df6c69f9eeb
+  sha256: b7c74f2eab3a8dbabc7e3fa4159c64dcf3e443b234c9292563ab2ccd2fd506f0
 
 build:
   noarch: python
@@ -18,22 +18,21 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python>=3.7
     - pip
   run:
-    - python >=3.7
+    - python>=3.7
     - shapely
-    - fiona
-    - pandas >=0.24.2
-    - pyproj >=2.0.0
+    - fiona==1.8.22 # pin until fiona-feedstock/issues/213 is solved
+    - pandas>=0.24.2
+    - pyproj>=2.0.0
     - numpy
-    - matplotlib-base >=3.0.0
-    - emoji >=2.0.0
+    - matplotlib-base>=3.0.0
+    - emoji>=2.0.0
     - cython
-    - hdbscan >=0.8.20
-    - gdal
+    - hdbscan>=0.8.20
+    - gdal>3.4.1
     - seaborn
-    - descartes
     - regex
     - scipy
     - joblib
