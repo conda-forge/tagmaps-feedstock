@@ -15,7 +15,8 @@ multiple tags (or emoji) attached. Utilizes HDBSCAN for determining cluster
 results at specific (optional user defined) distance. Tags, Locations and
 Emoji are processed in descending order of global occurence, alpha
 shapes are generated for cluster point clouds. Produces two output
-shapefiles with cluster shapes that can be visualized, e.g. in ESRI ArcGIS.
+shapefiles with cluster shapes that can be visualized, e.g. in ESRI ArcGIS
+or Mapnik.
 
 
 Current build status
