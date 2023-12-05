@@ -1,5 +1,5 @@
 {% set name = "tagmaps" %}
-{% set version = "0.22.6" %}
+{% set version = "0.22.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0efc177067fd9fb63476d3dbc34900a0b7cad006f5686d4e6078adbcdf600e0f
+  sha256: f9af9b4fc1a2baceefb535473053d21a0b97a347b0b7ef2536fe150ad80b2702
 
 build:
   noarch: python
